@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clasificación de Imágenes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"> <!-- Enlaza tu archivo CSS aquí -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <div class="camera-container">
+        <!-- Vista previa de la cámara -->
+        <video id="video" autoplay playsinline></video>
+
+        <!-- Elemento canvas para mostrar la imagen capturada -->
+        <canvas id="canvas" style="display: none;"></canvas> 
+
+        <!-- Mostrar prediccion sobre el video -->
+        <p id="result" class="prediction-text">Predicción: Esperando resultados...</p>
+
+    </div>
+    
+    <script src="static/js/app.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
+</body>
+</html>
